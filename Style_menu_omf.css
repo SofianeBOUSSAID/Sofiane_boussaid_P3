@@ -140,22 +140,25 @@ height: 250px;
 
 .etiq{
     background-color: white;
-    padding: 10px;
     border-radius: 15px;
     box-shadow: 0px 5px 15px 0px rgba(97, 97, 97, 0.445);
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: end;
     margin-bottom: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden ;
 }
 
 .etiq .text p:nth-child(1){
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .etiq .text p:nth-child(2){
     font-weight: 300;
+    font-size: 0.75em;
+    margin-bottom: 5px;
 }
 
 .price{
@@ -163,9 +166,56 @@ height: 250px;
 }
 
 .etiq p{
-    padding: 5px;
+    margin: 7px;
     padding-right: 15px;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+    white-space: nowrap;
 }
+
+.text{
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+    white-space: nowrap;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.valid{
+    margin: -5.1px;
+    background-color: var(--tertiaire);
+    border-top-right-radius: 15px ;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    margin-right: -65px;
+    transition: 1.5s;
+}
+
+.etiq:hover .valid{
+    margin-right: 0px;
+    transition: 1.5s;
+}
+
+.etiq:hover i{
+    transform: rotate(720deg);
+    transition: 1.5s;
+}
+
+.price_valid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+
+/**************************Boutton commander*******************************/
 
 .but{
     width: 100%;
