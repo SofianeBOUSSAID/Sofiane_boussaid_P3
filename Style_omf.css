@@ -19,6 +19,7 @@ img{
 
 /**************************REGLES GENERALE*******************************/
 
+
 .spinner_back{
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
@@ -153,6 +154,7 @@ header .title{
 .tete_boutton:hover{
     filter: brightness(1.2);
     transition: 0.25s;
+    cursor: pointer;
 }
 
 /**************************FIN TETE*******************************/
@@ -283,7 +285,6 @@ header .title{
 }
 
 .coeur_etiq :nth-child(2){
-    text-shadow: inset 0px 0px 1.5px var(--secondaire) ;
     background: linear-gradient(170deg,#FF79DA 0%,#9356DC 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -346,4 +347,20 @@ footer .title{
     font-size: 1.3em;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+@media (min-width: 769px){
+
+    .fen_res{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .etiquette{
+        width: 45%;
+        margin-bottom: 40px;
+    }
 }
