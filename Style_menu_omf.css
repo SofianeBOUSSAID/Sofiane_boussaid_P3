@@ -225,12 +225,12 @@ height: 250px;
     padding: 20px;
     font-size: 1.5em;
     margin-right: -65px;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .etiq:hover .valid{
     margin-right: 0px;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .etiq:hover i{
